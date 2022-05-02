@@ -32,7 +32,14 @@
 
 //CODE HERE
 
-
+const pizza = {
+    'name': 'margherita',
+    'price': 18,
+    'category': 'entree',
+    'popularity': 95,
+    'rating': 10,
+    'tags': ['feeds 4', 'family size']
+  }
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -44,6 +51,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +61,9 @@
 */
 
 //CODE HERE
+
+console.log(pizza.tags[1])
+
 
 
 /*
@@ -64,6 +75,11 @@
 
 //CODE HERE
 
+let {price} = pizza;
+
+console.log(price);
+
+
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +90,10 @@
 
 //CODE HERE
 
+let {category} = pizza;
+
+
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -89,8 +109,16 @@
 
 //CODE HERE
 
+let foodArr = [
+    {
+    price: 20,
+    category: 'snack',
+    popularity: 50,
+    rating: 5,
+    tags: 'kids',
+}]
 
-
+  
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -105,7 +133,17 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(function(element){
+    if (element === foodArr.tags){
+        return foodArr.tags;
+    }
+
+})
+
+console.log(filteredFood)
+    
+
+
 
 
 
