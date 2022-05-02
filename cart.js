@@ -35,7 +35,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.map(cart => cart.price).reduce((a, c) => (a + c))
+
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,7 +57,11 @@ const cart = [
 
 //CODE HERE
 
-
+function calcFinalPrice (cartTotal, couponValue, tax){
+    const finalPrice = (cartTotal * (tax + 1) - couponValue);
+    return `Your total after tax and coupons is $${finalPrice}`
+  }
+  console.log(calcFinalPrice(100, 10, 0.08))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -78,7 +84,12 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+
+A restaurant would need to know what their customers name, order and if they have any food allergies. If they are over 21 and their hunger level.
+
+Customer, name, order & allergies will be Strings.
+Over 21 will be a Boolean.
+Hunger level will be a Number.
 
 */
 
@@ -86,5 +97,20 @@ const cart = [
     Now, create a customer object following your own
     guidelines.
 */
+const customer = {
+    'name': 'Karan',
+    'order': 'Chicken Curry',
+    'allergies': 'Soy',
+    'over21': false,
+    'hunger': 80,
+};
+
+const customer2 = {
+    'name': 'Bilal',
+    'order': 'Beef Biryani',
+    'allergies': null,
+    'over21': true,
+    'hunger': 55,
+};
 
 //CODE HERE
