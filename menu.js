@@ -140,12 +140,7 @@ const filteredFood = foodArr.filter(function(element){
 
 })
 
-console.log(filteredFood)
-    
-
-
-
-
+console.log(filteredFood) 
 
 //////////////////PROBLEM 5////////////////////
 /* 

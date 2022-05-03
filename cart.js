@@ -97,6 +97,9 @@ Hunger level will be a Number.
     Now, create a customer object following your own
     guidelines.
 */
+
+//CODE HERE
+
 const customer = {
     'name': 'Karan',
     'order': 'Chicken Curry',
@@ -112,5 +115,3 @@ const customer2 = {
     'over21': true,
     'hunger': 55,
 };
-
-//CODE HERE
